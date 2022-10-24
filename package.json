@@ -1,0 +1,36 @@
+{
+  "name": "presentation",
+  "homepage": "https://haakseth.github.io/so-ein-gis-ding-6",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@turf/along": "^6.0.1",
+    "@turf/length": "^6.0.2",
+    "gh-pages": "^2.1.1",
+    "immer": "^4.0.2",
+    "maplibre-gl": "^1.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-spring": "^8.0.27",
+    "smooth-scroll-into-view-if-needed": "^1.1.23",
+    "spectacle-scripts": "2.4.0",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
