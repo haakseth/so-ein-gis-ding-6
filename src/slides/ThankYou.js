@@ -70,13 +70,21 @@ export default function ThankYou() {
             </li>
             <li>
               <A href="https://openlayers.org/en/latest/examples/?q=animation">
-                OpanLayers Animations
+                OpenLayers Animations
               </A>
             </li>
             <li>
               <A href="https://maplibre.org/maplibre-gl-js-docs/example/animate-a-line/">
                 Maplibre docs - Animate a line
               </A>
+            </li>
+            <li>
+              <A href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">
+                requestAnimationFrame()
+              </A>
+            </li>
+            <li>
+              <A href="https://easings.net/">Eksempler på easing-funktioner</A>
             </li>
           </UL>
         </ListWrapper>
@@ -111,11 +119,6 @@ export default function ThankYou() {
             </li>
             <li>
               <A href="https://haakseth.com/">Hjemmeside</A>
-            </li>
-            <li>
-              <A href="https://www.instagram.com/shakpup/">
-                Shakas instagram - @shakpup
-              </A>
             </li>
           </UL>
         </ListWrapper>
