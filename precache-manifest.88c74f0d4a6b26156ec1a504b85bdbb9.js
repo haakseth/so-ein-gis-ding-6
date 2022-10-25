@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "00f812cb1b07f6dbab35",
+    "revision": "a4001285c99802fc8afb",
     "url": "/so-ein-gis-ding-6/static/css/main.9999ccfe.chunk.css"
   },
   {
-    "revision": "00f812cb1b07f6dbab35",
-    "url": "/so-ein-gis-ding-6/static/js/main.00f812cb.chunk.js"
+    "revision": "a4001285c99802fc8afb",
+    "url": "/so-ein-gis-ding-6/static/js/main.a4001285.chunk.js"
   },
   {
     "revision": "8044e24fa10eb6b26bd4",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/so-ein-gis-ding-6/static/media/shaka2.8f94e042.jpg"
   },
   {
-    "revision": "1ca79f1943efbcc11a08f028c8a3cf3b",
+    "revision": "5002fcc8abe44669c1e0f150d88b3645",
     "url": "/so-ein-gis-ding-6/index.html"
   }
 ];
