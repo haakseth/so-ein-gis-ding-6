@@ -61,10 +61,6 @@ export default function Map() {
 
   useEffect(() => {
     if (route) {
-      // map.fitBounds(route.features[0].bbox, {
-      //   padding: 200
-      //   // speed: 10
-      // });
       animateLine();
     } else {
       setGeoJson({

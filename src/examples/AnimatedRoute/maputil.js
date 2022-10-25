@@ -15,3 +15,9 @@ export const getMap = (ref, options) => {
 };
 export const easeInOutCubic = (t) =>
   t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+
+export function easeInOutCirc(x) {
+  return x < 0.5
+    ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2
+    : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2;
+}

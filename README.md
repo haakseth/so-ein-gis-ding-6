@@ -1,6 +1,6 @@
 # So ein gis ding 6
 
-The presentation is published at [haakseth.github.io/so-ein-gis-ding-6](haakseth.github.io/so-ein-gis-ding-6)
+The presentation is published at [haakseth.github.io/so-ein-gis-ding-6](https://haakseth.github.io/so-ein-gis-ding-6)
 
 ## Codepens
 

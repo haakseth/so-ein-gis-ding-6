@@ -84,6 +84,11 @@ export default function ThankYou() {
           <h2>Eksempler</h2>
           <UL>
             <li>
+              <A href="https://glitch.com/edit/#!/animated-route-5-foss4g">
+                Glitch eksempel
+              </A>
+            </li>
+            <li>
               <A href="https://haakseth.github.io/animate-route/">
                 Animére rute
               </A>{" "}

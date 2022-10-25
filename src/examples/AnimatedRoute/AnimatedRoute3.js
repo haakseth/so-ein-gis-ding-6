@@ -5,8 +5,10 @@ import along from "@turf/along";
 import length from "@turf/length";
 import { toTapHouse, toOslo } from "./geojsons";
 import Vignette from "../../components/Vignette";
-import { easeInOutCubic, getMap } from "./maputil";
+import { easeInOutCirc, getMap } from "./maputil";
 
+const lineResulution = 2000;
+const numberOfAnimationFrames = 120;
 export default function Map() {
   const mapContainer = useRef();
   const [map, setMap] = useState(undefined);
@@ -17,7 +19,7 @@ export default function Map() {
     if (route) setRoute(undefined);
     else {
       const routeFromApi = oslo ? toOslo : toTapHouse;
-      const alongDist = length(routeFromApi) / 120;
+      const alongDist = length(routeFromApi) / lineResulution;
       const routeEven = {
         ...routeFromApi,
         features: [
@@ -28,10 +30,10 @@ export default function Map() {
         ],
         originalRoute: routeFromApi,
       };
-      for (var i = 0; i < 120; i++) {
+      for (var i = 0; i < lineResulution; i++) {
         const newCoord = along(
           routeFromApi.features[0].geometry,
-          alongDist * (i * easeInOutCubic(i / 120))
+          alongDist * (i * easeInOutCirc(i / lineResulution))
         );
         routeEven.features[0].geometry.coordinates.push(
           newCoord.geometry.coordinates
@@ -113,7 +115,10 @@ export default function Map() {
   const animateLine = () => {
     const antalpunkter = route.features[0].geometry.coordinates.length;
     const antalpunkterPerFrame =
-      antalpunkter > 60 ? Math.round(antalpunkter / 60) : 1;
+      antalpunkter > numberOfAnimationFrames
+        ? Math.round(antalpunkter / numberOfAnimationFrames)
+        : 1;
+
     if (progress < antalpunkter - antalpunkterPerFrame) {
       // append new coordinates to the lineString
       geoJson.features[0].geometry.coordinates = [
