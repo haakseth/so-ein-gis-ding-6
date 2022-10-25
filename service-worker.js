@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/so-ein-gis-ding-6/precache-manifest.b4b87d426ed67ea0401c2d6ea86ba786.js"
+  "/so-ein-gis-ding-6/precache-manifest.1d0f98ffc71c7aad67992952c818c36e.js"
 );
 
 workbox.clientsClaim();
