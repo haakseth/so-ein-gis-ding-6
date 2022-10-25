@@ -215,6 +215,13 @@ export default function Presentation() {
       >
         <H2 isSmallScreen={isSmallScreen}>Kortanimationer</H2>
         <SlideText isSmallScreen={isSmallScreen}>WebGL/Canvas</SlideText>
+        <Appear>
+          <div>
+            <SlideText isSmallScreen={isSmallScreen}>GIS-funktioner</SlideText>
+            <SlideText isSmallScreen={isSmallScreen}>Along, buffer</SlideText>
+            <SlideText isSmallScreen={isSmallScreen}>turf.js, JSTS</SlideText>
+          </div>
+        </Appear>
       </Slide>
 
       <Slide align={"center flex-start"}>
